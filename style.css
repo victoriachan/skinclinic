@@ -345,9 +345,13 @@ a:hover {
 	width: 700px;
 }
 #site-title a {
-	color: #000;
-	font-weight: bold;
 	text-decoration: none;
+	display: block;
+	width: 231px;
+	height: 100px;
+	overflow: hidden;
+	text-indent: -1000px;
+	background: url(images/logo.png) 0 0 no-repeat;
 }
 #site-description {
 	clear: right;
