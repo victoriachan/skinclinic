@@ -53,6 +53,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="additional-background">
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<div id="masthead">
