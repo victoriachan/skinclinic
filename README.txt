@@ -1,0 +1,6 @@
+Custom theme for SSLC website by VictoriaChan
+
+Required plugins:
+ * simple-fields
+ * custom-post-type-ui
+ * additional-image-sizes-zui
