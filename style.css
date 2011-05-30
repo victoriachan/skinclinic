@@ -378,7 +378,6 @@ a:hover {
 	float: left;
 }
 
-
 /* =Menu
 -------------------------------------------------------------- */
 
@@ -463,13 +462,31 @@ div.menu li {
 	color: #fff;
 }
 
+/* =Mainstage
+-------------------------------------------------------------- */
+
+ul.mainstage-teasers {
+	border: 1px solid red;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+ul.mainstage-teasers li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	width: 200px;
+	float: left;
+}
+
 /* =Content
 -------------------------------------------------------------- */
 
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 0;
 }
 #content {
 	margin-bottom: 36px;

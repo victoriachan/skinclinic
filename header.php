@@ -72,11 +72,20 @@
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 			</div><!-- #access -->
+			
+			<?php // Header widget
+				if ( is_active_sidebar( 'header-widget-area' ) ) : ?>
+				<?php dynamic_sidebar( 'header-widget-area' ); ?>
+			<?php endif; ?>
+					
 		</div><!-- #masthead -->
 	</div><!-- #header -->
 
 	<div id="main">
-	<?php if (1==2): #TODO: REMOVE  ?>
+		
+		
+		
+	<?php if (1==2): #TODO: REMOVE!!!!!!  ?>
 	<?php
 		// Check if this is a post or page, if it has a thumbnail, and if it's a big one
 		if ( is_singular() && current_theme_supports( 'post-thumbnails' ) &&

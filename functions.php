@@ -371,6 +371,17 @@ endif;
  * @uses register_sidebar
  */
 function skinclinic_widgets_init() {
+	// Custom Area 1, located at the header area.
+	register_sidebar( array(
+		'name' => __( 'Header Widget Area', 'skinclinic' ),
+		'id' => 'header-widget-area',
+		'description' => __( 'Header widget area', 'skinclinic' ),
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
 	// Area 1, located at the top of the sidebar.
 	register_sidebar( array(
 		'name' => __( 'Primary Widget Area', 'skinclinic' ),
