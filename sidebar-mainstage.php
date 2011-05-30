@@ -19,7 +19,7 @@
 			<li>
 			<?php if ($value[1]): ?><h2><?php print $value[1]; ?></h2><?php endif; ?>
 			<?php if ($value[2]): ?><div class="desc"><?php print $value[2]; ?></div><?php endif; ?>
-			<?php if ($value[3]): ?><?php print wp_get_attachment_image( $value[3], 'thumbnail', FALSE ); ?> <?php endif; ?>
+			<?php if ($value[3]): ?><?php print wp_get_attachment_image( $value[3], 'advertisement', FALSE ); ?> <?php endif; ?>
 			</li>
 		<?php endforeach; ?>
 	</ul>

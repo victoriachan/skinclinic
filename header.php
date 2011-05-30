@@ -80,7 +80,12 @@
 					
 		</div><!-- #masthead -->
 	</div><!-- #header -->
-
+	
+	<!-- Main stage carousel -->
+	<div id="main-stage">
+		<?php get_sidebar('mainstage'); ?>
+	</div>
+	
 	<div id="main">
 		
 		
