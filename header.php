@@ -76,6 +76,7 @@
 	</div><!-- #header -->
 
 	<div id="main">
+	<?php if (1==2): #TODO: REMOVE  ?>
 	<?php
 		// Check if this is a post or page, if it has a thumbnail, and if it's a big one
 		if ( is_singular() && current_theme_supports( 'post-thumbnails' ) &&
@@ -86,4 +87,5 @@
 			echo get_the_post_thumbnail( $post->ID );
 		elseif ( get_header_image() ) : ?>
 			<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+		<?php endif; ?>
 		<?php endif; ?>
