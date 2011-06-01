@@ -24,7 +24,7 @@ get_header(); ?>
 			 */
 			get_template_part( 'loop', 'page' );
 			?>
-
+      <?php get_sidebar('column'); ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 

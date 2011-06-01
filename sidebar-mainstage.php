@@ -1,6 +1,6 @@
 <?php
 /**
- * The Mainstage area at top of page.
+ * The Mainstage area at top of page as output by simple fields Advertisement fieldgroup
  *
  * @package WordPress
  * @subpackage Skin_Clinic
@@ -11,6 +11,7 @@
 	 * Get 'Advertisement' custom fields values from Simple Fields
 	 */
 	$advertisements = simple_fields_get_post_group_values($post->ID, 1, false, 2);
+	//print_r(simple_fields_get_post_group_values($post->ID, 3, false, 2));
 ?>
 <?php if ($advertisements): ?>
 	

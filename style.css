@@ -785,7 +785,17 @@ body.page .edit-link {
 #content .video-player {
 	padding: 0;
 }
-
+.entry-content .column {
+	float: left;
+	width: 47%;
+	margin-right: 6%;
+}
+.entry-content .column-odd {
+	clear: both;
+}
+.entry-content .column-even {
+	margin-right: 0;
+}
 
 /* =Asides
 -------------------------------------------------------------- */

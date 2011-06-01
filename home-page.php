@@ -23,6 +23,7 @@ get_header(); ?>
 				 */
 				get_template_part( 'loop', 'page' );
 				?>
+				
 			</div><!-- #content -->
 		</div><!-- #container -->
 
