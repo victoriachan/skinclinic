@@ -387,10 +387,10 @@ function skinclinic_widgets_init() {
 		'name' => __( 'Primary Widget Area', 'skinclinic' ),
 		'id' => 'primary-widget-area',
 		'description' => __( 'The primary widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
 	) );
 
 	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
@@ -398,8 +398,8 @@ function skinclinic_widgets_init() {
 		'name' => __( 'Secondary Widget Area', 'skinclinic' ),
 		'id' => 'secondary-widget-area',
 		'description' => __( 'The secondary widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
@@ -409,8 +409,8 @@ function skinclinic_widgets_init() {
 		'name' => __( 'First Footer Widget Area', 'skinclinic' ),
 		'id' => 'first-footer-widget-area',
 		'description' => __( 'The first footer widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
@@ -420,8 +420,8 @@ function skinclinic_widgets_init() {
 		'name' => __( 'Second Footer Widget Area', 'skinclinic' ),
 		'id' => 'second-footer-widget-area',
 		'description' => __( 'The second footer widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
@@ -431,8 +431,8 @@ function skinclinic_widgets_init() {
 		'name' => __( 'Third Footer Widget Area', 'skinclinic' ),
 		'id' => 'third-footer-widget-area',
 		'description' => __( 'The third footer widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
@@ -442,8 +442,8 @@ function skinclinic_widgets_init() {
 		'name' => __( 'Fourth Footer Widget Area', 'skinclinic' ),
 		'id' => 'fourth-footer-widget-area',
 		'description' => __( 'The fourth footer widget area', 'skinclinic' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );

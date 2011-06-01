@@ -216,7 +216,7 @@ body,
 input,
 textarea {
 	color: #222;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 }
 hr {
@@ -555,7 +555,7 @@ body.page-template-home-page-php #main {
 }
 #content dt,
 #content th {
-	color: #000;
+	color: #222;
 }
 #content h1,
 #content h2,
@@ -563,7 +563,7 @@ body.page-template-home-page-php #main {
 #content h4,
 #content h5,
 #content h6 {
-	color: #000;
+	color: #222;
 	line-height: 1.5em;
 	margin: 0 0 20px 0;
 }
@@ -1309,6 +1309,35 @@ img#wpstats {
 	margin: 0 auto 10px;
 }
 
+/* =Custom Style
+-------------------------------------------------------------- */
+/* Call us widget */
+#text-3 {
+	text-align: center;
+	background: url(images/telephone.png) 30% 0 no-repeat;
+	padding: 100px 0 0 0;
+	overflow: hidden;
+}
+#text-3 h2 {
+	font-weight: normal;
+	font-size: 1em;
+	font-family: Georgia, "Bitstream Charter", serif;
+}
+#text-3 .tel {
+	font-size: 2em;
+	line-height: 1.5em;
+}
+#text-3 p {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+#text-3 a {
+	color: #333;
+	text-decoration: none;
+}
+#text-3 a:hover {
+	color: #0066cc;
+}
 
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
 -------------------------------------------------------------- */
