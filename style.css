@@ -203,7 +203,20 @@ code {
 	float: right;
 	width: 220px;
 }
-
+ul#menu-footer-links {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+ul#menu-footer-links .menu-item {
+	list-style-type: none;
+	list-style-image: none;
+	display: inline;
+	padding: 0;
+	margin: 0 0 0 20px;
+}
 
 /* =Global Elements
 -------------------------------------------------------------- */

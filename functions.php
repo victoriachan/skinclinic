@@ -403,7 +403,7 @@ function skinclinic_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
+	
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
 		'name' => __( 'First Footer Widget Area', 'skinclinic' ),
@@ -447,6 +447,17 @@ function skinclinic_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	
+  // Area x, located in the footer. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Footer fullwidth Widget Area', 'skinclinic' ),
+		'id' => 'fullwidth-footer-widget-area',
+		'description' => __( 'The fullwidth footer widget area', 'skinclinic' ),
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );	
 }
 /** Register sidebars by running skinclinic_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'skinclinic_widgets_init' );

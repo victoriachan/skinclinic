@@ -18,6 +18,7 @@
 		&& ! is_active_sidebar( 'second-footer-widget-area' )
 		&& ! is_active_sidebar( 'third-footer-widget-area'  )
 		&& ! is_active_sidebar( 'fourth-footer-widget-area' )
+		&& ! is_active_sidebar( 'fullwidth-footer-widget-area' )
 	)
 		return;
 	// If we get this far, we have widgets. Let do this.
@@ -58,3 +59,11 @@
 <?php endif; ?>
 
 			</div><!-- #footer-widget-area -->
+			
+<?php if ( is_active_sidebar( 'fullwidth-footer-widget-area' ) ) : ?>
+	<div id="fullwidth-footer-widget" class="widget-area">
+		<ul class="xoxo">
+			<?php dynamic_sidebar( 'fullwidth-footer-widget-area' ); ?>
+		</ul>
+	</div><!-- #fourth .widget-area -->
+<?php endif; ?>
