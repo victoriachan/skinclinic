@@ -1325,10 +1325,15 @@ img#wpstats {
 }
 #text-3 .tel {
 	font-size: 2em;
-	line-height: 1.5em;
+	line-height: normal;
+}
+#text-3 .email {
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	letter-spacing: 0.01em;
 }
 #text-3 p {
-	margin: 0 0 5px 0;
+	margin: 0 0 10px 0;
 	padding: 0;
 }
 #text-3 a {
