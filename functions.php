@@ -528,3 +528,19 @@ function skinclinic_posted_in() {
 	);
 }
 endif;
+
+if ( ! function_exists( 'skinclinic_get_map' ) ) :
+/**
+ * Prints HTML with google map as output by pronamic_google_maps.
+ *
+ * @since Skin Clinic 1.0
+ */
+function skinclinic_get_map() {
+	if(function_exists('pronamic_google_maps')) {
+		return pronamic_google_maps(array(
+			'width' => 290 ,
+			'height' => 200 
+		));
+	}
+}
+endif;

@@ -162,6 +162,7 @@ code {
   overflow: hidden;
   background: url(images/sky.jpg) 0 0 repeat-x;
 }
+#visit-us,
 #header,
 #footer,
 #main,
@@ -570,6 +571,8 @@ body.page-template-home-page-php #main {
 #content th {
 	color: #222;
 }
+#visit-us h2, 
+#visit-us h3,
 #content h1,
 #content h2,
 #content h3,
@@ -789,11 +792,29 @@ body.page .edit-link {
 	float: left;
 	width: 47%;
 	margin-right: 6%;
+	font-size: 0.9em;
 }
 .entry-content .column-odd {
 	clear: both;
 }
 .entry-content .column-even {
+	margin-right: 0;
+}
+
+/* =Visit-us
+-------------------------------------------------------------- */
+#visit-us {
+	width: 100%;
+	overflow: hidden;
+}
+#visit-us .column-1,
+#visit-us .column-2,
+#visit-us .column-3 {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+#visit-us .column-3 {
 	margin-right: 0;
 }
 
