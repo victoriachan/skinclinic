@@ -12,15 +12,14 @@
  * @since Skin Clinic 1.0
  */
 
-  // calling the header.php
-  get_header();
+    // calling the header.php
+    get_header();
 
-  // action hook for placing content above #container
-  thematic_abovecontainer();
+    // action hook for placing content above #container
+    thematic_abovecontainer();
 ?>
 
     <div id="container">
-    
       <?php thematic_abovecontent(); ?>
     
       <div id="content">
@@ -62,22 +61,15 @@
                       
                       edit_post_link(__('Edit', 'thematic'),'<span class="edit-link">','</span>') ?>
   
-          </div><!-- .entry-content -->
-        </div><!-- #post -->
+          </div>
+        </div><!-- .post -->
   
           <?php
           
           thematic_belowpost();
           
           // calling the comments template
-          if (THEMATIC_COMPATIBLE_COMMENT_HANDLING) {
-        if ( get_post_custom_values('comments') ) {
-          // Add a key/value of "comments" to enable comments on pages!
           thematic_comments_template();
-        }
-      } else {
-        thematic_comments_template();
-      }
           
           // calling the widget area 'page-bottom'
           get_sidebar('page-bottom');
@@ -94,9 +86,6 @@
 
     // action hook for placing content below #container
     thematic_belowcontainer();
-
-    // calling the standard sidebar 
-    thematic_sidebar();
     
     // calling footer.php
     get_footer();
