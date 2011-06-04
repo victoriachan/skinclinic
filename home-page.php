@@ -12,32 +12,93 @@
  * @since Skin Clinic 1.0
  */
 
-get_header(); ?>
+  // calling the header.php
+  get_header();
 
-		<div id="container">
-			<div id="content" role="main">
-				<?php
-				/* Run the loop to output the page.
-				 * If you want to overload this in a child theme then include a file
-				 * called loop-page.php and that will be used instead.
-				 */
-				get_template_part( 'loop', 'page' );
-				?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+  // action hook for placing content above #container
+  thematic_abovecontainer();
+?>
 
-<?php get_sidebar(); ?>
-<div id="visit-us">
-	<h2>Our location</h2>
-	<div class="column-1">
-	 <?php print skinclinic_get_map(); ?>
-	 </div>
-	 <div class="column-2">
-	  <?php print pronamic_google_maps_description(); ?>
-	 </div>
-	 <div class="column-3">
-	   <h3>Our opening hours</h3>
-	   <p>to do</p>
-	 </div>
-</div><!-- #visit-us -->
-<?php get_footer(); ?>
+    <div id="container">
+    
+      <?php thematic_abovecontent(); ?>
+    
+      <div id="content">
+  
+              <?php
+          
+              // calling the widget area 'page-top'
+              get_sidebar('page-top');
+  
+              the_post();
+              
+              thematic_abovepost();
+          
+              ?>
+              
+        <div id="post-<?php the_ID();
+          echo '" ';
+          if (!(THEMATIC_COMPATIBLE_POST_CLASS)) {
+            post_class();
+            echo '>';
+          } else {
+            echo 'class="';
+            thematic_post_class();
+            echo '">';
+          }
+                  
+                  // creating the post header
+                  thematic_postheader();
+                  
+                  ?>
+                  
+          <div class="entry-content">
+  
+                      <?php
+                      
+                      the_content();
+                      
+                      wp_link_pages("\t\t\t\t\t<div class='page-link'>".__('Pages: ', 'thematic'), "</div>\n", 'number');
+                      
+                      edit_post_link(__('Edit', 'thematic'),'<span class="edit-link">','</span>') ?>
+  
+          </div><!-- .entry-content -->
+        </div><!-- #post -->
+  
+          <?php
+          
+          thematic_belowpost();
+          
+          // calling the comments template
+          if (THEMATIC_COMPATIBLE_COMMENT_HANDLING) {
+        if ( get_post_custom_values('comments') ) {
+          // Add a key/value of "comments" to enable comments on pages!
+          thematic_comments_template();
+        }
+      } else {
+        thematic_comments_template();
+      }
+          
+          // calling the widget area 'page-bottom'
+          get_sidebar('page-bottom');
+          
+          ?>
+  
+      </div><!-- #content -->
+      
+      <?php thematic_belowcontent(); ?> 
+      
+    </div><!-- #container -->
+
+<?php 
+
+    // action hook for placing content below #container
+    thematic_belowcontainer();
+
+    // calling the standard sidebar 
+    thematic_sidebar();
+    
+    // calling footer.php
+    get_footer();
+
+?>
