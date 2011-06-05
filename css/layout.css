@@ -41,13 +41,15 @@
 -------------------------------------------------------------- */
 
 .skip-link {
-    display: none;
+  display: none;
 }
 #access {
-    height: 32px;
-    font-size: 13px;
-    overflow: visible;
-    z-index: 100;
+  height: 32px;
+  font-size: 13px;
+  overflow: visible;
+  z-index: 100;
+  margin-left: -20px;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;  
 }
 /*** ESSENTIAL STYLES ***/
 .sf-menu, .sf-menu * {
@@ -101,19 +103,14 @@ ul.sf-menu li li li.sfHover ul {
   left: 10em; /* match ul width */
   top: 0;
 }
-
 /*** THEMATIC SKIN ***/
 .sf-menu {
-  border-right:1px solid #ccc;
   float:left;
 }
 .ie6 .sf-menu {
   margin-bottom: -1px;
 }
 .sf-menu a {
-  border-left:1px solid #ccc;
-  border-top:1px solid #ccc;
-  border-bottom:1px solid #ccc;
   padding:9px 13px;
   text-decoration:none;
 }
@@ -127,38 +124,71 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom-color:#fff;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-  color: #666;
+  color: #FFF;
 }
 .sf-menu li {
-  background: #fff;
 }
 .sf-menu li li {
-  background: #fff;
 }
 .sf-menu li li li {
-  background: #9AAEDB;
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-    background: #fafafa;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
     outline:  0;
     border-bottom-color:#ccc;
 }
 .sf-menu ul {
-    border-right:1px solid #ccc;
-    border-bottom:1px solid #ccc;
 }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
-  top:32px; /* overriding essential styles */
+  top:31px; /* overriding essential styles */
 }
 .sf-menu ul ul {
     margin-top:0;
 }
 .sf-menu ul a {
-    background:#fafafa;
-  border-bottom:none;
+  background:#000;
+  background: rgba(0, 0, 0, 0.7);
 }
 .sf-menu ul a:hover {
-    color: #FF4B33;
+    color: #62fcfc;
 }
+
+/* =Page footer
+-------------------------------------------------------------- */
+#page-footer {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  font-size: 0.9em;
+  color: #666;
+}
+#page-footer ul.xoxo {
+  margin: 0;
+  padding: 0;
+}
+#page-footer ul.xoxo li {
+  list-style: none;
+  margin: 0 0 0 3% ;
+  padding: 0;  
+  width: 23%;
+  float: left;
+}
+#page-footer h2 {
+  color: #222;
+}
+#page-footer h3 {
+  margin-top: 60px;
+}
+#page-footer #pronamic_google_maps-2 {
+  width: 389px;
+  margin: 0;
+}
+#pronamic_google_maps-2 .pgm {
+  border: 2px solid #fff;
+  width: 385px;
+}
+

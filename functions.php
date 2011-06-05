@@ -17,7 +17,7 @@
 //        'menu_class' => 'menu',
 //        'echo' => true
 //    );
-//	return $args;
+//  return $args;
 //}
 //add_filter('wp_page_menu_args','childtheme_menu_args');
 
@@ -32,6 +32,52 @@ define('THEMATIC_COMPATIBLE_COMMENT_FORM', true);
 define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 
 /**
+ * Register widgetized areas, including two sidebars and four widget-ready columns in the footer.
+ *
+ * To override skinclinic_widgets_init() in a child theme, remove the action hook and add your own
+ * function tied to the init hook.
+ *
+ * @since Skin Clinic 1.0
+ * @uses register_sidebar
+ */
+function skinclinic_widgets_init() {
+  // Custom Area 1, located at the header area.
+  register_sidebar( array(
+    'admin_menu_order' => 1400,
+    'name' => __( 'Page footer', 'skinclinic' ),
+    'id' => 'page-footer',
+    'description' => __( 'SkinClinic page footer widget area', 'skinclinic' ),
+    'before_widget' => thematic_before_widget(),
+    'after_widget' => thematic_after_widget(),
+    'before_title' => thematic_before_title(),
+    'after_title' => thematic_after_title(),
+    'function'    => 'skinclinic_page_footer_widget',
+  ) );
+}
+/** Register sidebars by running skinclinic_widgets_init() on the widgets_init hook. */
+add_action( 'widgets_init', 'skinclinic_widgets_init' );
+
+function skinclinic_page_footer_widget() {
+  if (is_active_sidebar('page-footer')) {
+    echo thematic_before_widget_area('page-footer');
+    dynamic_sidebar('page-footer');
+    echo thematic_after_widget_area('page-footer');
+  }
+}
+// Located in sidebar-page-bottom.php
+function thematic_abovepagefooter() {
+  do_action('thematic_abovepagefooter');
+  }
+//function widget_area_page_footer() {
+//  do_action('widget_area_page_footer');
+//}
+function thematic_belowpagefooter() {
+  do_action('thematic_belowpagefooter');
+}
+
+
+
+/**
  * Add wrapper div around entire content
  */
 function childtheme_before() {
@@ -39,7 +85,7 @@ function childtheme_before() {
 }
 add_filter('thematic_before','childtheme_before');
 function childtheme_after() {
-  print '</div>';
+  print '</div><!-- #additional-background -->';
 }
 add_filter('thematic_after','childtheme_after');
 
@@ -60,6 +106,28 @@ function childtheme_override_blogtitle() {
 }
 add_action('thematic_header','childtheme_override_blogtitle',3);
 
+/**
+ * Show our footer widget
+ */
+function childtheme_abovefooter() {
+  print get_sidebar('page-footer');
+}
+add_filter('thematic_abovefooter','childtheme_abovefooter');
 
+/**
+ * Use h2 for widgets
+ */
+// CSS markup before the widget title
+function childtheme_before_title() {
+	$content = "<h2 class=\"widgettitle\">";
+	return apply_filters('childtheme_before_title', $content);
+}
+add_filter('thematic_before_title','childtheme_before_title');
+// CSS markup after the widget title
+function childtheme_after_title() {
+	$content = "</h2>\n";
+	return apply_filters('childtheme_after_title', $content);
+}
+add_filter('thematic_after_title','childtheme_after_title');
 
 ?>

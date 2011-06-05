@@ -3,17 +3,57 @@
  */
 /* =Global Elements
 -------------------------------------------------------------- */
-
+html {
+  /* Font size in reset-fonts.css */
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif; 
+  color: #444; 
+  line-height: 1.5; 
+  margin: 0; 
+  padding: 0;
+}
+body {
+  background: #F1F1F1;
+}
 body, input, textarea {
-    font:15px Georgia,serif;
-    line-height:22px;
+  font-size: 15px;
+  font-family: Georgia, "Bitstream Charter", serif;
+  line-height:22px;
+  color: #222222;
+}
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
+  font-family: Georgia, "Bitstream Charter", serif;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; 
+}
+h1 {
+  font-size: 2.3em; 
+  margin: 0 0 21px 0;
+  line-height: 1.1;
+  width: 728px;
+  
+}
+h2, legend {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0 0 21px;
+  line-height: 1.2;
+}
+h3, h4, h5, h6 {
+  font-size: 1.05em;
+  line-height: 1.3;
+  margin: 0 0 21px;
 }
 p, ul, ol, dd, pre {
     margin-bottom:22px;
 }
 pre, code {
-	font:14px Monaco, monospace;
-	line-height:22px;
+  font:14px Monaco, monospace;
+  line-height:22px;
 }
 blockquote {
     color:#666;
@@ -168,7 +208,7 @@ a:hover {
     margin:0 0 22px 0;
 }
 .entry-utility {
-	clear:both;
+  clear:both;
     color:#666;
     font-size:13px;
     line-height:18px;
@@ -184,8 +224,8 @@ a:hover {
     color: #FF4B33;
 }
 .edit-link {
-	clear:both;
-	display:block;
+  clear:both;
+  display:block;
 }
 .page-link {
     font-size:13px;
@@ -218,36 +258,36 @@ li.content-column {
     width:45%;
 }
 .gallery {
-	display: block;
-	clear: both;
-	overflow: hidden;
-	margin: 0 auto;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
     padding:0 0 22px 0;
-	}
+  }
 .gallery .gallery-row {
-	display: block;
-	clear: both;
-	overflow: hidden;
-	margin: 0;
-	}
+  display: block;
+  clear: both;
+  overflow: hidden;
+  margin: 0;
+  }
 .gallery .gallery-item {
-	overflow: hidden;
-	float: left;
-	margin: 0;
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	}
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  }
 .gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
-	max-width: 89%;
-	height: auto;
-	padding: 1%;
-	margin: 0 auto;
-	border: none !important;
-	}
+  max-width: 89%;
+  height: auto;
+  padding: 1%;
+  margin: 0 auto;
+  border: none !important;
+  }
 .gallery-caption {
-	margin-left: 0;
-	}
+  margin-left: 0;
+  }
 .wp-caption-text,
 .gallery-caption {
     color:#666;
@@ -309,16 +349,16 @@ li.content-column {
     font-style:normal;
 }
 .nav-previous {
-	float: left;
-	width:50%;
+  float: left;
+  width:50%;
 }
 .nav-next {
-	float: right;
-	width:50%;
-	text-align:right;
+  float: right;
+  width:50%;
+  text-align:right;
 }
 #nav-above,#nav-below {
-	width: 100%;
+  width: 100%;
 }
 #nav-above {
     display:none;
@@ -333,7 +373,7 @@ li.content-column {
 -------------------------------------------------------------- */
 
 #comments {
-	clear:both;
+  clear:both;
     padding:22px 0 0 0;
 }
 #comments,
@@ -524,12 +564,12 @@ li.content-column {
 /* =Asides, Sidebars & Widget-Ready Areas
 -------------------------------------------------------------- */
 
-.aside,
+/* .aside,
 .aside input {
     font-size:13px;
     line-height:18px;
     margin-bottom:6px;
-}
+} */
 .aside p,
 .aside ul,
 .aside ol,
@@ -552,7 +592,7 @@ li.content-column {
 .aside .current_page_item .page_item a:active {
     color: #FF4B33;
 }
-.aside {
+/* .aside {
     color:#666;
 }
 .aside a {
@@ -564,12 +604,12 @@ li.content-column {
 }
 .aside h3 {
     font-size:15px;
-    font-style:italic;
+    font-weight: bold;
     line-height:22px;
 }
 .aside h3 a {
     text-decoration:none;
-}
+} */
 .aside caption {
     font-size:11px;
     font-family:Arial,sans-serif;
@@ -618,7 +658,7 @@ li.content-column {
     margin:0 0 22px 0;
 }
 .aside #searchsubmit {
-	display: none;	
+  display: none;  
 }
 /*
     Main Asides
