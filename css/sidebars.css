@@ -1,0 +1,140 @@
+/* =Mainstage
+-------------------------------------------------------------- */
+#mainstage {
+  margin: 22px auto 0 auto;
+  width: 960px;
+  z-index: 1;
+}
+ul.mainstage-teasers {
+  margin: 0 0 0 -10px;
+  padding: 0;
+  height: 350px;
+  position: relative;
+}
+ul.mainstage-teasers li {
+  margin: 0 5px;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  width: 910px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  background: #fff;
+  border: 10px solid #fff;
+  webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  z-index: 3;
+}
+ul.mainstage-teasers li:nth-child(2) {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  z-index: 2;
+}
+ul.mainstage-teasers li:nth-child(3) {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  z-index: 1;
+}
+ul.mainstage-teasers li .attachment-advertisement {
+  float: right;
+}
+
+/* =Columns
+-------------------------------------------------------------- */
+
+.entry-content .column {
+  float: left;
+  width: 47%;
+  margin-right: 6%;
+  font-size: 0.9em;
+}
+.entry-content .column-odd {
+  clear: both;
+}
+.entry-content .column-even {
+  margin-right: 0;
+}
+
+/* =Call us widget
+-------------------------------------------------------------- */
+#text-3 {
+	text-align: center;
+	background: url(../images/telephone.png) 30% 0 no-repeat;
+	padding: 100px 0 0 0;
+	overflow: hidden;
+}
+#text-3 h3 {
+	font-weight: normal;
+	font-size: 1em;
+	font-family: Georgia, "Bitstream Charter", serif;
+	margin-bottom: 5px;
+}
+#text-3 .tel {
+	font-size: 2em;
+	line-height: normal;
+}
+#text-3 .email {
+	font-size: 0.8em;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	letter-spacing: 0.01em;
+}
+#text-3 p {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+#text-3 a {
+	color: #333;
+	text-decoration: none;
+}
+#text-3 a:hover {
+	color: #0066cc;
+}
+
+/* =Page footer
+-------------------------------------------------------------- */
+#page-footer {
+  border-top:1px solid #ccc;
+  background: #f7f7f7;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  font-size: 0.9em;
+  color: #444;
+}
+#page-footer h2 {
+  color: #222;
+  font-style: italic;
+}
+#page-footer h3 {
+  margin-top: 60px;
+}
+#page-footer ul.xoxo {
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+}
+#page-footer ul.xoxo li {
+  list-style: none;
+  margin: 0 0 0 3% ;
+  padding: 0;  
+  width: 23%;
+  float: left;
+}
+#page-footer ul.xoxo li#text-2 {
+  width: 28%;
+}
+#page-footer ul.xoxo li#text-4 {
+  width: 18%;
+}
+#page-footer #pronamic_google_maps-2 {
+  width: 389px;
+  margin: 0;
+}
+#pronamic_google_maps-2 .pgm {
+  border: 1px solid #ccc;
+  width: 385px;
+}
