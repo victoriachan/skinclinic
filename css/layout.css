@@ -37,14 +37,6 @@
   filter:alpha(opacity=50);
 }
 
-/* =Mainstage
--------------------------------------------------------------- */
-#mainstage {
-  margin: 22px auto 0 auto;
-  width: 960px;
-  z-index: 1;
-}
-
 /* =Menu
 -------------------------------------------------------------- */
 
@@ -162,4 +154,8 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu ul a:hover {
     color: #62fcfc;
+}
+.current-menu-ancestor,
+.current-menu-item {
+  /* border: 1px solid red; */
 }

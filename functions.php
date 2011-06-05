@@ -47,22 +47,37 @@ define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
  * @uses register_sidebar
  */
 function skinclinic_widgets_init() {
-  // Custom Area 1, located at the header area.
-  register_sidebar( array(
+ register_sidebar( array(
     'admin_menu_order' => 1400,
+    'name' => __( 'Below top menu', 'skinclinic' ),
+    'id' => 'secondary-menu',
+    'description' => __( 'SkinClinic below top menu', 'skinclinic' ),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    'function'    => 'skinclinic_secondary_menu_widget',
+  ) );
+  register_sidebar( array(
+    'admin_menu_order' => 1500,
     'name' => __( 'Page footer', 'skinclinic' ),
     'id' => 'page-footer',
     'description' => __( 'SkinClinic page footer widget area', 'skinclinic' ),
     'before_widget' => thematic_before_widget(),
     'after_widget' => thematic_after_widget(),
-    'before_title' => thematic_before_title(),
-    'after_title' => thematic_after_title(),
+    'before_title' => '<h2 class="widget-title">',
+    'after_title' => '</h2>',
     'function'    => 'skinclinic_page_footer_widget',
   ) );
 }
 /** Register sidebars by running skinclinic_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'skinclinic_widgets_init' );
 
+function skinclinic_secondary_menu_widget() {
+  if (is_active_sidebar('secondary-menu')) {
+    dynamic_sidebar('secondary-menu');
+  }
+}
 function skinclinic_page_footer_widget() {
   if (is_active_sidebar('page-footer')) {
     echo thematic_before_widget_area('page-footer');
@@ -82,17 +97,17 @@ function thematic_belowpagefooter() {
  * Use h2 for widgets
  */
 // CSS markup before the widget title
-function childtheme_before_title() {
-	$content = "<h2 class=\"widgettitle\">";
-	return apply_filters('childtheme_before_title', $content);
-}
-add_filter('thematic_before_title','childtheme_before_title');
-// CSS markup after the widget title
-function childtheme_after_title() {
-	$content = "</h2>\n";
-	return apply_filters('childtheme_after_title', $content);
-}
-add_filter('thematic_after_title','childtheme_after_title');
+//function childtheme_before_title() {
+//  $content = "<h2 class=\"widgettitle\">";
+//  return apply_filters('childtheme_before_title', $content);
+//}
+//add_filter('thematic_before_title','childtheme_before_title');
+//// CSS markup after the widget title
+//function childtheme_after_title() {
+//  $content = "</h2>\n";
+//  return apply_filters('childtheme_after_title', $content);
+//}
+//add_filter('thematic_after_title','childtheme_after_title');
 
 
 /**
@@ -141,6 +156,28 @@ function childtheme_override_postheader() {
    }  
    echo apply_filters( 'thematic_postheader', $postheader ); // Filter to override default post header
 }
+
+/**
+ * Show secondary menu widget
+ */
+function childtheme_override_access() { ?>
+  <div id="access">
+    
+    <div class="skip-link"><a href="#content" title="<?php _e('Skip navigation to the content', 'thematic'); ?>"><?php _e('Skip to content', 'thematic'); ?></a></div><!-- .skip-link -->
+    
+    <?php 
+    
+      if ((function_exists("has_nav_menu")) && (has_nav_menu(apply_filters('thematic_primary_menu_id', 'primary-menu')))) {
+        echo  wp_nav_menu(thematic_nav_menu_args());
+      } else {
+        echo  thematic_add_menuclass(wp_page_menu(thematic_page_menu_args()));  
+      }
+      
+    ?>
+    
+  </div><!-- #access -->
+  <?php skinclinic_secondary_menu_widget(); ?>
+<?php }
 
 /**
  * Show our footer widget
