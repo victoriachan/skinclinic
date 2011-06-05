@@ -130,12 +130,32 @@ function childtheme_override_blogtitle() {
 }
 add_action('thematic_header','childtheme_override_blogtitle',3);
 
+function childtheme_override_postheader() {
+  global $post; 
+  if (is_home() || is_front_page()) {
+    return; // Don't output h1 header for homepage
+  } elseif ( is_404() || $post->post_type == 'page') {
+       $postheader = thematic_postheader_posttitle();        
+   } else {
+       $postheader = thematic_postheader_posttitle() . thematic_postheader_postmeta();    
+   }  
+   echo apply_filters( 'thematic_postheader', $postheader ); // Filter to override default post header
+}
+
 /**
  * Show our footer widget
  */
 function childtheme_abovefooter() {
-  //print get_sidebar('page-footer');
+  print get_sidebar('page-footer');
 }
 add_filter('thematic_abovefooter','childtheme_abovefooter');
+
+/**
+ * Add mainstage
+ */
+function childtheme_belowheader() {
+  get_sidebar('mainstage');
+}
+add_filter('thematic_belowheader','childtheme_belowheader');
 
 ?>

@@ -10,7 +10,7 @@
 -------------------------------------------------------------- */
 
 #header {
-  z-index: 2;
+  z-index: 10;
 }
 #branding {
   padding: 20px 0 0 0;
@@ -35,6 +35,14 @@
   opacity: 0.5;
   -moz-opacity: 0.5;
   filter:alpha(opacity=50);
+}
+
+/* =Mainstage
+-------------------------------------------------------------- */
+#mainstage {
+  margin: 22px auto 0 auto;
+  width: 960px;
+  z-index: 1;
 }
 
 /* =Menu
@@ -154,56 +162,4 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu ul a:hover {
     color: #62fcfc;
-}
-
-/* =Page footer
--------------------------------------------------------------- */
-#page-footer {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
-  font-size: 0.9em;
-  color: #666;
-}
-#page-footer ul.xoxo {
-  margin: 0;
-  padding: 0;
-}
-#page-footer ul.xoxo li {
-  list-style: none;
-  margin: 0 0 0 3% ;
-  padding: 0;  
-  width: 23%;
-  float: left;
-}
-#page-footer h2 {
-  color: #222;
-}
-#page-footer h3 {
-  margin-top: 60px;
-}
-#page-footer #pronamic_google_maps-2 {
-  width: 389px;
-  margin: 0;
-}
-#pronamic_google_maps-2 .pgm {
-  border: 2px solid #fff;
-  width: 385px;
-}
-
-/* =Content
--------------------------------------------------------------- */
-
-.entry-content .column {
-	float: left;
-	width: 47%;
-	margin-right: 6%;
-	font-size: 0.9em;
-}
-.entry-content .column-odd {
-	clear: both;
-}
-.entry-content .column-even {
-	margin-right: 0;
 }
