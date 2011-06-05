@@ -32,6 +32,12 @@ define('THEMATIC_COMPATIBLE_COMMENT_FORM', true);
 define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 
 /**
+ * ********************************************
+ *  WIDGETS
+ * ********************************************
+ */
+
+/**
  * Register widgetized areas, including two sidebars and four widget-ready columns in the footer.
  *
  * To override skinclinic_widgets_init() in a child theme, remove the action hook and add your own
@@ -67,16 +73,34 @@ function skinclinic_page_footer_widget() {
 // Located in sidebar-page-bottom.php
 function thematic_abovepagefooter() {
   do_action('thematic_abovepagefooter');
-  }
-//function widget_area_page_footer() {
-//  do_action('widget_area_page_footer');
-//}
+}
 function thematic_belowpagefooter() {
   do_action('thematic_belowpagefooter');
 }
 
+/**
+ * Use h2 for widgets
+ */
+// CSS markup before the widget title
+function childtheme_before_title() {
+	$content = "<h2 class=\"widgettitle\">";
+	return apply_filters('childtheme_before_title', $content);
+}
+add_filter('thematic_before_title','childtheme_before_title');
+// CSS markup after the widget title
+function childtheme_after_title() {
+	$content = "</h2>\n";
+	return apply_filters('childtheme_after_title', $content);
+}
+add_filter('thematic_after_title','childtheme_after_title');
 
 
+/**
+ * ********************************************
+ *  Sidebars / Output
+ * ********************************************
+ */
+ 
 /**
  * Add wrapper div around entire content
  */
@@ -110,24 +134,8 @@ add_action('thematic_header','childtheme_override_blogtitle',3);
  * Show our footer widget
  */
 function childtheme_abovefooter() {
-  print get_sidebar('page-footer');
+  //print get_sidebar('page-footer');
 }
 add_filter('thematic_abovefooter','childtheme_abovefooter');
-
-/**
- * Use h2 for widgets
- */
-// CSS markup before the widget title
-function childtheme_before_title() {
-	$content = "<h2 class=\"widgettitle\">";
-	return apply_filters('childtheme_before_title', $content);
-}
-add_filter('thematic_before_title','childtheme_before_title');
-// CSS markup after the widget title
-function childtheme_after_title() {
-	$content = "</h2>\n";
-	return apply_filters('childtheme_after_title', $content);
-}
-add_filter('thematic_after_title','childtheme_after_title');
 
 ?>

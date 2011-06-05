@@ -46,10 +46,12 @@
 	                    <?php
 	                    
 	                    the_content();
+	                    // Add custom sidebar from Simple Fields
+	                    get_sidebar('column');
 	                    
 	                    wp_link_pages("\t\t\t\t\t<div class='page-link'>".__('Pages: ', 'thematic'), "</div>\n", 'number');
 	                    
-	                    edit_post_link(__('Edit', 'thematic'),'<span class="edit-link">','</span>') ?>
+	                    //edit_post_link(__('Edit', 'thematic'),'<span class="edit-link">','</span>') ?>
 	
 					</div><!-- .entry-content -->
 				</div><!-- #post -->

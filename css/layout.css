@@ -192,3 +192,18 @@ ul.sf-menu li li li.sfHover ul {
   width: 385px;
 }
 
+/* =Content
+-------------------------------------------------------------- */
+
+.entry-content .column {
+	float: left;
+	width: 47%;
+	margin-right: 6%;
+	font-size: 0.9em;
+}
+.entry-content .column-odd {
+	clear: both;
+}
+.entry-content .column-even {
+	margin-right: 0;
+}
