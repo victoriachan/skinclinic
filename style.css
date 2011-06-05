@@ -26,9 +26,15 @@ Thematic is © Ian Stewart http://themeshaper.com/
 
 /* Apply default theme styles and colors */
 /* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
-@import url('../thematic/library/styles/default.css');
+/* @import url('../thematic/library/styles/default.css'); */
 
 /* Prepare theme for plugins */
 @import url('../thematic/library/styles/plugins.css');
 
+/* ****************** */
+/* Skinclinic custom  */
+/* ****************** */
 
+@import url('css/default.css');
+@import url('css/layout.css');
+@import url('css/sidebars.css');

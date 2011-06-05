@@ -32,6 +32,19 @@ define('THEMATIC_COMPATIBLE_COMMENT_FORM', true);
 define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 
 /**
+ * Add wrapper div around entire content
+ */
+function childtheme_before() {
+  print '<div id="additional-background">';
+}
+add_filter('thematic_before','childtheme_before');
+function childtheme_after() {
+  print '</div>';
+}
+add_filter('thematic_after','childtheme_after');
+
+
+/**
  * Don't display blog description, esp not as H1!
  */
 function childtheme_override_blogdescription() { return; }
@@ -42,7 +55,7 @@ function childtheme_override_blogdescription() { return; }
 function childtheme_override_blogtitle() {
   $thistag = (is_home() || is_front_page()) ? 'h1' : 'div';
   ?>
-    <<?php print $thistag ?> id="blog-title"><span><a href="<?php bloginfo('url') ?>/" title="<?php bloginfo('name') ?>" rel="home"><?php bloginfo('name') ?></a></span></<?php print $thistag ?>>
+    <<?php print $thistag ?> id="site-title"><span><a href="<?php bloginfo('url') ?>/" title="<?php bloginfo('name') ?>" rel="home"><?php bloginfo('name') ?></a></span></<?php print $thistag ?>>
   <?php
 }
 add_action('thematic_header','childtheme_override_blogtitle',3);
