@@ -214,7 +214,8 @@ a:hover {
 }
 .entry-content .post-intro {
   font-size: 1.3em;
-  line-height: 1.3em;
+  line-height: 1.5em;
+  margin-bottom: 33px;
 }
 .entry-utility {
   clear:both;
