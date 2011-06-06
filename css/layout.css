@@ -191,7 +191,7 @@ body.home #access .current-menu-item {
 #menu-our-treatments a {
   color: #333;
   text-decoration: none;
-  background: url(../images/bullet.png) 5px 50% no-repeat;
+  background: url(../images/bullet_gray.png) 5px 50% no-repeat;
   padding: 3px 10px 3px 25px;
   line-height: 20px;
   -webkit-border-radius: 3px;
@@ -199,12 +199,12 @@ body.home #access .current-menu-item {
   border-radius: 3px;
 }
 #menu-our-treatments a:hover {
-  background-color: #000;
+  background: url(../images/bullet.png) 5px 50% no-repeat #000;
   color: #fff;
 }
 #menu-our-treatments .current-menu-ancestor a,
 #menu-our-treatments .current-menu-item a {
-  background-color: #444;
+  background: url(../images/bullet.png) 5px 50% no-repeat #444;
   color: #f3f3f3;
 }
 #menu-our-treatments li {
