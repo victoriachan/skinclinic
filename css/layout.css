@@ -16,7 +16,8 @@
   z-index: 10;
 }
 #branding {
-  padding: 20px 0 0 0;
+  height: 100px;
+  padding: 20px 0 10px 0;
 }
 #site-title {
   overflow: hidden;
@@ -135,12 +136,12 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li li li {
 }
-.sf-menu li:hover, .sf-menu li.sfHover,
+/* .sf-menu li:hover, .sf-menu li.sfHover, */
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
     background: #000;
     background: rgba(0, 0, 0, 0.9);
     outline:  0;
-    border-bottom-color:#ccc;
+    border-bottom-color:#fff;
 }
 .sf-menu ul {
 }
@@ -158,7 +159,61 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu ul a:hover {
     color: #62fcfc;
 }
-.current-menu-ancestor,
-.current-menu-item {
-  /* border: 1px solid red; */
+#access .current-menu-ancestor,
+#access .current-menu-item {
+  padding-bottom: 10px;
+  background: url(../images/pointy.png) 50% bottom no-repeat;
+}
+#access .current-menu-ancestor .sub-menu,
+#access .current-menu-item .sub-menu {
+  display: none!important;
+}
+body.home #access .current-menu-ancestor,
+body.home #access .current-menu-item {
+  background-image: none;
+  padding-bottom: 0;
+}
+
+/* Contextual menu */
+#header .widget_nav_menu {
+  clear: both;
+  width: 100%;
+  background-color: #D8D8D8;
+  color: #444;
+  margin: 10px 0 0 0;
+}
+#menu-our-treatments {
+  overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+#menu-our-treatments a {
+  color: #333;
+  text-decoration: none;
+  background: url(../images/bullet.png) 5px 50% no-repeat;
+  padding: 3px 10px 3px 25px;
+  line-height: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#menu-our-treatments a:hover {
+  background-color: #000;
+  color: #fff;
+}
+#menu-our-treatments .current-menu-ancestor a,
+#menu-our-treatments .current-menu-item a {
+  background-color: #444;
+  color: #f3f3f3;
+}
+#menu-our-treatments li {
+  font-size: 0.8em;
+  font-style: italic;
+  /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px 0 0;
 }

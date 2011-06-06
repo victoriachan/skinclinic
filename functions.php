@@ -31,6 +31,9 @@ define('THEMATIC_COMPATIBLE_COMMENT_FORM', true);
 // Unleash the power of Thematic's feed link functions
 define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 
+// OUr Treatment page id
+define('SKINCLINIC_TREATMENT_PAGE_ID', 7);
+
 /**
  * Custom helper functions
  * Returns array
@@ -104,8 +107,11 @@ function skinclinic_widgets_init() {
 add_action( 'widgets_init', 'skinclinic_widgets_init' );
 
 function skinclinic_secondary_menu_widget() {
-  if (is_active_sidebar('secondary-menu')) {
-    dynamic_sidebar('secondary-menu');
+  global $post;
+  if (($post->ID == SKINCLINIC_TREATMENT_PAGE_ID) OR ($post->ancestors && in_array(SKINCLINIC_TREATMENT_PAGE_ID, $post->ancestors))) {
+    if (is_active_sidebar('secondary-menu')) {
+      dynamic_sidebar('secondary-menu');
+    }
   }
 }
 function skinclinic_page_footer_widget() {
