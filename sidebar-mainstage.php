@@ -10,8 +10,8 @@
   /**
    * Get 'Advertisement' custom fields values from Simple Fields
    */
-  $advertisements = simple_fields_get_post_group_values($post->ID, 1, false, 2);
-  //print_r(simple_fields_get_post_group_values($post->ID, 3, false, 2));
+  $advertisements = skinclinic_get_page_advertisements($post->ID);
+  
 ?>
 <?php if ($advertisements): ?>
   <div id="mainstage">

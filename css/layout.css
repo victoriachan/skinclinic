@@ -5,6 +5,9 @@
   overflow: hidden;
   background: url(../images/sky.jpg) 0 0 repeat-x;
 }
+#additional-background.no-mainstage {
+  background: url(../images/sky_short.jpg) 0 0 repeat-x;
+}
 
 /* =Header
 -------------------------------------------------------------- */
@@ -135,7 +138,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
     background: #000;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     outline:  0;
     border-bottom-color:#ccc;
 }
@@ -150,7 +153,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu ul a {
   background:#000;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
 .sf-menu ul a:hover {
     color: #62fcfc;

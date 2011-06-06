@@ -32,6 +32,36 @@ define('THEMATIC_COMPATIBLE_COMMENT_FORM', true);
 define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 
 /**
+ * Custom helper functions
+ * Returns array
+ */
+function skinclinic_get_page_advertisements ($postid) {
+  $advertisements = simple_fields_get_post_group_values($postid, 1, false, 2);
+  // Don't show advertisements that do not have a description field.
+  // Bug in simple fields does not delete field when blank
+  foreach ($advertisements as $key => $field) {
+    if (!strlen($field[2])) {
+      unset($advertisements[$key]);
+    }
+  }
+  array_merge($advertisements);
+  return $advertisements;
+}
+
+/**
+ * Prints classes for #main div
+ */
+function skinclinic_additional_classes() {
+  global $post;
+  if(count(skinclinic_get_page_advertisements($post->ID)) > 0) {
+    print 'has-mainstage';
+  } else {
+    print 'no-mainstage';
+  }
+}
+
+
+/**
  * ********************************************
  *  WIDGETS
  * ********************************************
@@ -120,7 +150,9 @@ function thematic_belowpagefooter() {
  * Add wrapper div around entire content
  */
 function childtheme_before() {
-  print '<div id="additional-background">';
+  ?>
+    <div id="additional-background" class="<?php skinclinic_additional_classes() ?>" >
+  <?php
 }
 add_filter('thematic_before','childtheme_before');
 function childtheme_after() {
