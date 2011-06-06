@@ -136,7 +136,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li li li {
 }
-/* .sf-menu li:hover, .sf-menu li.sfHover, */
+.sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
     background: #000;
     background: rgba(0, 0, 0, 0.9);
