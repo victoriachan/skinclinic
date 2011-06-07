@@ -43,7 +43,7 @@ function skinclinic_get_page_advertisements ($postid) {
   // Don't show advertisements that do not have a description field.
   // Bug in simple fields does not delete field when blank
   foreach ($advertisements as $key => $field) {
-    if (!strlen($field[2])) {
+    if ((!strlen($field[2]) && ($field[3] == 0))) {
       unset($advertisements[$key]);
     }
   }
@@ -172,7 +172,13 @@ add_filter('thematic_after','childtheme_after');
 /**
  * Don't display blog description, esp not as H1!
  */
-function childtheme_override_blogdescription() { return; }
+function childtheme_override_blogdescription() { 
+  $blogdesc = get_bloginfo('description');
+  if (strlen($blogdesc)) {
+    print '<div id="strapline">' . $blogdesc  . '</div>';
+  }
+}
+add_action('thematic_header','thematic_blogdescription',5);
 
 /**
  * Display site name as h1 on front page

@@ -35,7 +35,7 @@ h1 {
   margin: 0 0 21px 0;
   line-height: 1.2em;
   font-weight: normal;
-  text-shadow: 0 0 2px rgba(0,0,0,0.2);
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
   filter: dropshadow(color=#000000, offx=1, offy=1); 
 }
 h2, legend {
@@ -100,7 +100,7 @@ a:hover {
 
 #main {
     clear:both;
-    padding:22px 0;
+    padding:22px 0 22px 0;
     z-index: 1;
 }
 .no-mainstage #main {

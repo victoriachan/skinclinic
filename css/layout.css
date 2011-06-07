@@ -3,10 +3,10 @@
 
 #additional-background {
   overflow: hidden;
-  background: url(../images/sky.jpg) 0 0 repeat-x;
+  background: url(../images/bg_homepage.jpg) 50% 0 repeat-x;
 }
 #additional-background.no-mainstage {
-  background: url(../images/sky_short.jpg) 0 0 repeat-x;
+  background: url(../images/bg_short.jpg) 50% 0 repeat-x;
 }
 
 /* =Header
@@ -16,12 +16,20 @@
   z-index: 10;
 }
 #branding {
-  height: 100px;
-  padding: 20px 0 10px 0;
+  height: 135px;
+  padding: 10px 0 0 0;
+}
+#strapline {
+  color: #fff;
+  text-indent: -9999px;
+  width: 230px;
+  height: 30px;
+  overflow: hidden;
+  background: url(../images/strapline.png) 0 0 no-repeat;
 }
 #site-title {
   overflow: hidden;
-  margin: 0 0 7px 0;
+  margin: 0 0 5px 0;
   padding: 0;
   width: 700px;
 }
@@ -49,12 +57,22 @@
 }
 #access {
   height: 32px;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 32px;
   overflow: visible;
   z-index: 100;
   margin-left: -20px;
-  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;  
+  font-weight: normal;
 }
+#access li a:first-letter {
+}
+#access .sub-menu {
+  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: normal;
+}
+
 /*** ESSENTIAL STYLES ***/
 .sf-menu, .sf-menu * {
   margin: 0;
@@ -128,18 +146,21 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom-color:#fff;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-  color: #FFF;
+  /* color: #02333c; */
+  color: #fff;
 }
 .sf-menu li {
+  height: 32px;
 }
 .sf-menu li li {
 }
 .sf-menu li li li {
 }
+.sf-menu li:hover a, .sf-menu li.sfHover a,
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+    color: #fff;
     background: #000;
-    background: rgba(0, 0, 0, 0.9);
     outline:  0;
     border-bottom-color:#fff;
 }
@@ -154,7 +175,6 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu ul a {
   background:#000;
-  background: rgba(0, 0, 0, 0.9);
 }
 .sf-menu ul a:hover {
     color: #62fcfc;
