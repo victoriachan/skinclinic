@@ -123,10 +123,12 @@ function skinclinic_page_footer_widget() {
 }
 // Located in sidebar-page-bottom.php
 function thematic_abovepagefooter() {
+  echo '<div id="page-footer-wrapper">';
   do_action('thematic_abovepagefooter');
 }
 function thematic_belowpagefooter() {
   do_action('thematic_belowpagefooter');
+  echo '</div>';
 }
 
 /**

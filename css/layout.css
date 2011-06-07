@@ -175,10 +175,15 @@ body.home #access .current-menu-item {
 }
 
 /* Contextual menu */
+.menu-our-treatments-container {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 #header .widget_nav_menu {
   clear: both;
   width: 100%;
   background-color: #D8D8D8;
+  border-bottom: 1px solid #fff;
   color: #444;
   margin: 10px 0 0 0;
 }

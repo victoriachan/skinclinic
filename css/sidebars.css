@@ -94,8 +94,13 @@ ul.mainstage-teasers li .attachment-advertisement {
 
 /* =Page footer
 -------------------------------------------------------------- */
-#page-footer {
+#page-footer-wrapper {
   border-top:1px solid #ccc;
+  overflow: hidden;
+}
+#page-footer {
+  border-top:1px solid #fff;
+  border-bottom:1px solid #ccc;
   background: #f7f7f7;
   margin: 0 auto;
   padding: 20px 0;
