@@ -3,10 +3,10 @@
 
 #additional-background {
   overflow: hidden;
-  background: url(../images/bg_homepage.jpg) 50% 0 repeat-x;
+  background: url(../images/sky.jpg) 50% 0 repeat-x;
 }
 #additional-background.no-mainstage {
-  background: url(../images/bg_short.jpg) 50% 0 repeat-x;
+  background: url(../images/sky_short.jpg) 50% 0 repeat-x;
 }
 
 /* =Header
