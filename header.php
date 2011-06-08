@@ -25,6 +25,10 @@
     thematic_canonical_url();
     
     // Loading the stylesheet
+    //print "<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>";
+    //print "<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>";
+    print "<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>";
+    //print "<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>";
     thematic_create_stylesheet();
 
 	if (THEMATIC_COMPATIBLE_FEEDLINKS) {    
