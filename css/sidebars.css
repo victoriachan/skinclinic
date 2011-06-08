@@ -6,6 +6,9 @@
   width: 960px;
   z-index: 1;
 }
+ul.mainstage-teasers h2 {
+  font-size: 2em;
+}
 ul.mainstage-teasers {
   margin: 0 0 0 -10px;
   padding: 0;
