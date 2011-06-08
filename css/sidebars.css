@@ -134,7 +134,7 @@ ul.mainstage-teasers li .image img {
 }
 #page-footer ul.xoxo li {
   list-style: none;
-  margin: 0 0 0 3% ;
+  margin: 0 0 0 5% ;
   padding: 0;  
   width: 23%;
   float: left;
@@ -143,7 +143,9 @@ ul.mainstage-teasers li .image img {
   width: 28%;
 }
 #page-footer ul.xoxo li#text-4 {
-  width: 18%;
+  width: 23%;
+  margin: 0;
+  float: right;
 }
 #page-footer #pronamic_google_maps-2 {
   width: 389px;
