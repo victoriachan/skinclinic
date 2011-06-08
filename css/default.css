@@ -24,13 +24,14 @@ body, input, textarea {
 }
 h1, h2, h3, h4, h5, h6 {
   /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
-  font-family: "Pacifico", Georgia, "Bitstream Charter", serif;
+  font-family: "Dancing Script", Georgia, "Bitstream Charter", serif;
   font-weight: normal;
   line-height: 1.5em;
   margin: 0;
   padding: 0; 
 }
 h1 {
+  font-family: Georgia, "Bitstream Charter", serif;
   font-size: 2.4em; 
   margin: 0 0 21px 0;
   line-height: 1.2em;
@@ -39,15 +40,21 @@ h1 {
   filter: dropshadow(color=#000000, offx=1, offy=1); 
 }
 h2, legend {
-  font-size: 1.4em;
+  font-size: 1.6em;
   padding: 0;
-  margin: 0 0 21px;
+  margin: 0 0 12px;
   line-height: 1.2em;
 }
 h3, h4, h5, h6 {
-  font-size: 1.05em;
+  font-size: 1.3em;
   line-height: 1.3em;
-  margin: 0 0 21px;
+  margin: 0 0 12px;
+}
+.entry-content .post-intro {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-style: italic;
+  margin-bottom: 33px;
 }
 p, ul, ol, dd, pre {
     margin-bottom:22px;
@@ -187,20 +194,11 @@ a:hover {
 .entry-content {
     padding:22px 0 0 0;
 }
-/* .entry-content h1,
-.entry-content h2 {
-    font-family:Arial,sans-serif;
-    font-size:19px;
-    font-weight:bold;
-    padding:28px 0 14px 0;
-} */
 .entry-content h3 {
-    font-size:17px;
-    font-style:italic;
-    padding:28px 0 14px 0;
+    /* font-style:italic; */
+    padding-top:28px;
 }
 .entry-content h4 {
-    font-size:11px;
     font-family:Arial,sans-serif;
     font-weight:bold;
     text-transform:uppercase;
@@ -211,11 +209,6 @@ a:hover {
 }
 .entry-content embed {
     margin:0 0 22px 0;
-}
-.entry-content .post-intro {
-  font-size: 1.3em;
-  line-height: 1.5em;
-  margin-bottom: 33px;
 }
 .entry-utility {
   clear:both;

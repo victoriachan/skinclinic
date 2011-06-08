@@ -122,9 +122,10 @@ ul.mainstage-teasers li .image img {
 #page-footer h2 {
   color: #222;
   font-style: italic;
+  display: none;
 }
 #page-footer h3 {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 #page-footer ul.xoxo {
   margin: 0 auto;
