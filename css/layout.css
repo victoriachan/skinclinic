@@ -250,3 +250,33 @@ body.home #access .current-menu-item {
   margin: 0;
   padding: 1px 10px 1px 0;
 }
+
+/* Our treatment entry styles */
+.entry-content h3,
+.entry-content h2 {
+  display: inline-block;
+}
+.entry-content p.float-wrapper {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.entry-content .alignright {
+  float: right;
+  margin-left: 15px;
+}
+.entry-content .alignleft {
+  float: left;
+  margin-right: 20px;
+}
+.entry-content img.framed-image {
+  margin: 5px;
+  border: 6px solid #fff;
+  webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+.entry-content img.framed-image:nth-child(1) {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
