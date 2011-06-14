@@ -201,14 +201,14 @@ body.home #access .current-menu-item {
   /* display: none!important; */
 }
 .menu-our-treatments-container {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 #header .widget_nav_menu {
   clear: both;
   width: 100%;
-  background-color: #D8D8D8;
-  border-bottom: 1px solid #fff;
+  background-color: #f1f1f1;
+  /* border-bottom: 1px solid #fff; */
   color: #444;
   margin: 10px 0 0 0;
 }
@@ -216,10 +216,10 @@ body.home #access .current-menu-item {
   overflow: hidden;
   width: 940px;
   margin: 0 auto;
-  padding: 12px 0;
+  padding: 5px 0;
 }
 #menu-our-treatments a {
-  color: #333;
+  color: #777;
   text-decoration: none;
   background: url(../images/bullet_gray.png) 5px 50% no-repeat;
   padding: 3px 10px 3px 25px;
@@ -234,8 +234,8 @@ body.home #access .current-menu-item {
 }
 #menu-our-treatments .current-menu-ancestor a,
 #menu-our-treatments .current-menu-item a {
-  background: url(../images/bullet.png) 5px 50% no-repeat #9b9b9b;
-  color: #f3f3f3;
+  background: url(../images/bullet.png) 5px 50% no-repeat #ddd;
+  color: #888;
 }
 #menu-our-treatments li {
   font-size: 0.8em;

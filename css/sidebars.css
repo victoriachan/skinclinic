@@ -111,7 +111,7 @@ ul.mainstage-teasers li .image img {
 #page-footer {
   border-top:1px solid #fff;
   border-bottom:1px solid #ccc;
-  background: #f7f7f7;
+  background: #f1f1f1;
   margin: 0 auto;
   padding: 20px 0;
   overflow: hidden;
@@ -127,6 +127,7 @@ ul.mainstage-teasers li .image img {
 }
 #page-footer h3 {
   margin-top: 20px;
+  font-weight: normal;
 }
 #page-footer ul.xoxo {
   margin: 0 auto;
