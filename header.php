@@ -78,6 +78,7 @@ if (apply_filters('thematic_open_wrapper', true)) {
         ?>
 
 	</div><!-- #header-->
+	<?php #skinclinic_secondary_menu_widget(); ?>
     <?php
     
     // action hook for placing content below the theme header

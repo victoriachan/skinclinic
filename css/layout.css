@@ -6,7 +6,7 @@
   background: url(../images/sky.jpg) 50% 0 repeat-x;
 }
 #additional-background.no-mainstage {
-  background: url(../images/sky_short.jpg) 50% 0 repeat-x;
+  background: none;
 }
 
 /* =Header
@@ -14,6 +14,7 @@
 
 #header {
   z-index: 10;
+  background: url(../images/sky.jpg) 50% 0 repeat-x;
 }
 #branding {
   height: 135px;
@@ -56,7 +57,7 @@
   display: none;
 }
 #access {
-  height: 32px;
+  height: 37px;
   font-size: 14px;
   line-height: 32px;
   overflow: visible;
@@ -181,7 +182,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 #access .current-menu-ancestor,
 #access .current-menu-item {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   background: url(../images/pointy.png) 50% bottom no-repeat;
 }
 #access .current-menu-ancestor .current_page_item,
@@ -204,13 +205,14 @@ body.home #access .current-menu-item {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-#header .widget_nav_menu {
+.widget_nav_menu {
   clear: both;
   width: 100%;
-  background-color: #f1f1f1;
-  /* border-bottom: 1px solid #fff; */
+  background-color: #000;
+  border-bottom: 1px solid #fff;
   color: #444;
-  margin: 10px 0 0 0;
+  margin: 0;
+  padding: 0;
 }
 #menu-our-treatments {
   overflow: hidden;
@@ -219,9 +221,9 @@ body.home #access .current-menu-item {
   padding: 5px 0;
 }
 #menu-our-treatments a {
-  color: #777;
+  color: #FFF;
   text-decoration: none;
-  background: url(../images/bullet_gray.png) 5px 50% no-repeat;
+  background: url(../images/bullet.png) 5px 50% no-repeat;
   padding: 3px 10px 3px 25px;
   line-height: 20px;
   -webkit-border-radius: 3px;
@@ -230,15 +232,15 @@ body.home #access .current-menu-item {
 }
 #menu-our-treatments a:hover {
   background: url(../images/bullet.png) 5px 50% no-repeat #000;
-  color: #fff;
+  color: #62fcfc;
 }
 #menu-our-treatments .current-menu-ancestor a,
 #menu-our-treatments .current-menu-item a {
-  background: url(../images/bullet.png) 5px 50% no-repeat #ddd;
-  color: #888;
+  background: url(../images/bullet_gray.png) 5px 50% no-repeat #333;
+  color: #999;
 }
 #menu-our-treatments li {
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-style: italic;
   /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
   display: inline;
