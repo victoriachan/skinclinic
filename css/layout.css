@@ -184,17 +184,22 @@ ul.sf-menu li li li.sfHover ul {
   padding-bottom: 10px;
   background: url(../images/pointy.png) 50% bottom no-repeat;
 }
-#access .current-menu-ancestor .sub-menu,
-#access .current-menu-item .sub-menu {
-  display: none!important;
-}
+#access .current-menu-ancestor .current_page_item,
 body.home #access .current-menu-ancestor,
 body.home #access .current-menu-item {
   background-image: none;
   padding-bottom: 0;
 }
+#access .current-menu-ancestor .current_page_item a {
+  background-color: #222;
+  color: #62fcfc;
+}
 
 /* Contextual menu */
+#access .current-menu-ancestor .sub-menu,
+#access .current-menu-item .sub-menu {
+  /* display: none!important; */
+}
 .menu-our-treatments-container {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
