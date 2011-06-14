@@ -208,7 +208,8 @@ body.home #access .current-menu-item {
 .widget_nav_menu {
   clear: both;
   width: 100%;
-  background-color: #000;
+  background-color: #f1f1f1;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #444;
   margin: 0;
@@ -221,7 +222,7 @@ body.home #access .current-menu-item {
   padding: 5px 0;
 }
 #menu-our-treatments a {
-  color: #FFF;
+  color: #444;
   text-decoration: none;
   background: url(../images/bullet.png) 5px 50% no-repeat;
   padding: 3px 10px 3px 25px;
@@ -231,21 +232,21 @@ body.home #access .current-menu-item {
   border-radius: 3px;
 }
 #menu-our-treatments a:hover {
-  background: url(../images/bullet.png) 5px 50% no-repeat #000;
+  background: url(../images/bullet_gray.png) 5px 50% no-repeat #333;
   color: #62fcfc;
 }
 #menu-our-treatments .current-menu-ancestor a,
 #menu-our-treatments .current-menu-item a {
-  background: url(../images/bullet_gray.png) 5px 50% no-repeat #333;
-  color: #999;
+  background: url(../images/bullet.png) 5px 50% no-repeat #ccc;
+  color: #666;
 }
 #menu-our-treatments li {
-  font-size: 0.85em;
+  font-size: 0.83em;
   font-style: italic;
   /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
   display: inline;
   float: left;
   list-style: none;
   margin: 0;
-  padding: 3px 10px 3px 0;
+  padding: 1px 10px 1px 0;
 }
