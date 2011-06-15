@@ -261,6 +261,9 @@ body.home #access .current-menu-item {
   margin: 0;
   padding: 0;
 }
+.entry-content p.float-wrapper img {
+  display: block;
+}
 .entry-content .alignright {
   float: right;
   margin-left: 15px;

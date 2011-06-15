@@ -1,4 +1,5 @@
 /* Thematic does ie css in a strange way. You use selectors for it, not specific css file */
 
 body.ie7 .entry-content p.float-wrapper {
+  display: inline-block;
 }
