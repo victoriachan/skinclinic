@@ -92,15 +92,13 @@ hr {
     height:1px;
     margin-bottom:22px;
 }
+a:visited,
 a:link {
-    color:#004B91;
-}
-a:visited {
-    color:#743399;
+    color:#30C1C1;
 }
 a:active,
 a:hover {
-    color: #FF4B33;
+    color: #666;
 }
 
 /* =Content
