@@ -11,14 +11,19 @@ body.ie7 .entry-content p {
 }
 
 /* IE7 has no box shadow */
-
+body.ie6 ul.mainstage-teasers li,
+body.ie8 ul.mainstage-teasers li,
 body.ie7 ul.mainstage-teasers li {
   border: 1px solid #DDD;
 }
+body.ie6 ul.mainstage-teasers li .inner-wrapper,
+body.ie8 ul.mainstage-teasers li .inner-wrapper,
 body.ie7 ul.mainstage-teasers li .inner-wrapper {
   overflow: hidden;
   border: 10px solid #FFF;
 }
+body.ie6 .entry-content img.framed-image,
+body.ie8 .entry-content img.framed-image,
 body.ie7 .entry-content img.framed-image {
   border: 6px solid #F3f3f3;
 }
