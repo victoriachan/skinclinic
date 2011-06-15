@@ -225,11 +225,14 @@ body.home #access .current-menu-item {
   color: #444;
   text-decoration: none;
   background: url(../images/bullet.png) 5px 50% no-repeat;
-  padding: 3px 10px 3px 25px;
+  padding: 0 10px 1px 25px;
+  margin: 1px 10px 1px 0;
   line-height: 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  display: block;
+  float: left;
 }
 #menu-our-treatments a:hover {
   background: url(../images/bullet_gray.png) 5px 50% no-repeat #333;
@@ -245,10 +248,15 @@ body.home #access .current-menu-item {
   font-style: italic;
   /* font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; */
   display: inline;
-  float: left;
   list-style: none;
   margin: 0;
-  padding: 1px 10px 1px 0;
+  padding: 0;
+}
+
+/* Fix for ie7 etc where 5th item ran on two lines */
+/* HARDCODED: Will need updating when menu changed */
+#menu-our-treatments li#menu-item-138 {
+  clear: left;
 }
 
 /* Our treatment entry styles */
