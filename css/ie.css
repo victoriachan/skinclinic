@@ -9,3 +9,16 @@ body.ie7 .entry-content p {
   clear: none;
   width: auto;
 }
+
+/* IE7 has no box shadow */
+
+body.ie7 ul.mainstage-teasers li {
+  border: 1px solid #DDD;
+}
+body.ie7 ul.mainstage-teasers li .inner-wrapper {
+  overflow: hidden;
+  border: 10px solid #FFF;
+}
+body.ie7 .entry-content img.framed-image {
+  border: 6px solid #F3f3f3;
+}

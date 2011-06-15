@@ -17,7 +17,7 @@
   <div id="mainstage">
   <ul class="mainstage-teasers">
     <?php foreach ($advertisements as $key => $value): ?>
-      <li>
+      <li><div class="inner-wrapper">
       <?php if ($value[1] || $value[2]): ?>
         <div class="text-content">
         <?php if ($value[1]): ?><h2><?php print $value[1]; ?></h2><?php endif; ?>
@@ -25,7 +25,7 @@
         </div>
       <?php endif; ?>
       <?php if ($value[3]): ?><div class="image"><?php print wp_get_attachment_image( $value[3], 'full', FALSE ); ?></div><?php endif; ?>
-      </li>
+      </div></li>
     <?php endforeach; ?>
   </ul>
   </div>
