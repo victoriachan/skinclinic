@@ -29,25 +29,27 @@ ul.mainstage-teasers li {
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
   z-index: 3;
 }
-ul.mainstage-teasers li:nth-child(2) {
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  z-index: 2;
-}
-ul.mainstage-teasers li:nth-child(3) {
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  z-index: 1;
-}
 ul.mainstage-teasers li .text-content {
   float: left;
   width: 40%;
   margin-left: 20px;
   bottom: 10px;
   position: absolute;
+  z-index: 2;
 }
 ul.mainstage-teasers li .image img {
   float: right;
+  position: relative;
+  z-index: 1;
+}
+ul.mainstage-teasers-multiple {
+  position: relative;
+}
+ul.mainstage-teasers-multiple li {
+  display: none;
+}
+ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
+  display: block;
 }
 
 /* =Columns

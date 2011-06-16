@@ -287,7 +287,12 @@ body.home #access .current-menu-item {
   -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
-.entry-content img.framed-image:nth-child(1) {
+.entry-content img.framed-image {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
+}
+.entry-content img.framed-image-tilt-left {
+  -webkit-transform: rotate(-0.5deg);
+  -moz-transform: rotate(-0.5deg);
+  margin-left: 20px;
 }

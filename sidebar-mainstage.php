@@ -15,9 +15,9 @@
 ?>
 <?php if ($advertisements): ?>
   <div id="mainstage">
-  <ul class="mainstage-teasers">
+  <ul class="mainstage-teasers mainstage-teasers-<?php print count($advertisements) > 1? 'multiple' : 'single'; ?>">
     <?php foreach ($advertisements as $key => $value): ?>
-      <li><div class="inner-wrapper">
+      <li class="mainstage-teaser-<?php print $key ?>"><div class="inner-wrapper">
       <?php if ($value[1] || $value[2]): ?>
         <div class="text-content">
         <?php if ($value[1]): ?><h2><?php print $value[1]; ?></h2><?php endif; ?>
