@@ -34,6 +34,9 @@ define('THEMATIC_COMPATIBLE_FEEDLINKS', true);
 // OUr Treatment page id
 define('SKINCLINIC_TREATMENT_PAGE_ID', 7);
 
+// Define this theme dir
+define('SKINCLINIC_TEMPLATE_DIR', dirname( get_bloginfo('stylesheet_url')));
+
 /**
  * Custom helper functions
  * Returns array
@@ -49,6 +52,49 @@ function skinclinic_get_page_advertisements ($postid) {
   }
   array_merge($advertisements);
   return $advertisements;
+}
+
+//function skinclinic_add_javascript () {
+//    print '<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/jquery.bxSlider/jquery.bxSlider.min.js"></script>'."\n";
+//    print '<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/site.js"></script>'."\n";
+//    
+//}
+//add_filter('thematic_head_scripts','skinclinic_add_javascript');
+//add_action('wp_head', 'skinclinic_add_javascript', 10);
+
+function childtheme_override_head_scripts() {
+    $scriptdir_start = "\t";
+    $scriptdir_start .= '<script type="text/javascript" src="';
+    $scriptdir_start .= get_bloginfo('template_directory');
+    $scriptdir_start .= '/library/scripts/';
+    
+    $scriptdir_end = '"></script>';
+    
+    $scripts = "\n";
+    $scripts .= $scriptdir_start . 'hoverIntent.js' . $scriptdir_end . "\n";
+    $scripts .= $scriptdir_start . 'superfish.js' . $scriptdir_end . "\n";
+    $scripts .= $scriptdir_start . 'supersubs.js' . $scriptdir_end . "\n";
+    $dropdown_options = $scriptdir_start . 'thematic-dropdowns.js' . $scriptdir_end . "\n";
+    
+    $scripts = $scripts . apply_filters('thematic_dropdown_options', $dropdown_options);
+
+    $scripts .= "\t" .'<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/jquery.bxSlider/jquery.bxSlider.min.js"></script>'."\n";
+    $scripts .= "\t" .'<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/site.js"></script>'."\n";
+    
+     // $scripts .= "\n";
+     // $scripts .= "\t";
+     // $scripts .= '<script type="text/javascript">' . "\n";
+     // $scripts .= "\t\t" . '/*<![CDATA[*/' . "\n";
+     // $scripts .= "\t\t" . 'jQuery.noConflict();' . "\n";
+     // $scripts .= "\t\t" . '/*]]>*/' . "\n";
+     // $scripts .= "\t";
+     // $scripts .= '</script>' . "\n";
+
+    // Print filtered scripts
+    print apply_filters('thematic_head_scripts', $scripts);
+}
+if (apply_filters('thematic_use_superfish', TRUE)) {
+	add_action('wp_head','thematic_head_scripts');
 }
 
 /**

@@ -35,6 +35,7 @@ Thematic is © Ian Stewart http://themeshaper.com/
 /* Skinclinic custom  */
 /* ****************** */
 
+@import url('js/jquery.bxSlider/bx_styles/bx_styles.css');
 @import url('css/default.css');
 @import url('css/layout.css');
 @import url('css/sidebars.css');

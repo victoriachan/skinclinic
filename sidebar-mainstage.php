@@ -14,8 +14,8 @@
   
 ?>
 <?php if ($advertisements): ?>
-  <div id="mainstage">
-  <ul class="mainstage-teasers mainstage-teasers-<?php print count($advertisements) > 1? 'multiple' : 'single'; ?>">
+  <div id="mainstage"><div class="mainstage-inner">
+  <ul<?php if (count($advertisements) > 1) { print ' id="mainstage-carousel"'; } ?> class="mainstage-teasers mainstage-teasers-<?php print count($advertisements) > 1? 'multiple' : 'single'; ?>">
     <?php foreach ($advertisements as $key => $value): ?>
       <li class="mainstage-teaser-<?php print $key ?>"><div class="inner-wrapper">
       <?php if ($value[1] || $value[2]): ?>
@@ -28,5 +28,5 @@
       </div></li>
     <?php endforeach; ?>
   </ul>
-  </div>
+  </div></div>
 <?php endif; ?>
