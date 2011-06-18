@@ -77,7 +77,8 @@ function childtheme_override_head_scripts() {
     $dropdown_options = $scriptdir_start . 'thematic-dropdowns.js' . $scriptdir_end . "\n";
     
     $scripts = $scripts . apply_filters('thematic_dropdown_options', $dropdown_options);
-
+    
+    // See http://bxslider.com/
     $scripts .= "\t" .'<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/jquery.bxSlider/jquery.bxSlider.min.js"></script>'."\n";
     $scripts .= "\t" .'<script type="text/javascript" src="'.SKINCLINIC_TEMPLATE_DIR.'/js/site.js"></script>'."\n";
     

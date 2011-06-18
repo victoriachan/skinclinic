@@ -35,11 +35,11 @@ ul.mainstage-teasers li .inner-wrapper {
   webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-  z-index: 3;
+  position: relative;
 }
 ul.mainstage-teasers li .text-content {
   float: left;
-  width: 40%;
+  width: 50%;
   margin-left: 20px;
   bottom: 10px;
   position: absolute;
@@ -53,14 +53,32 @@ ul.mainstage-teasers li .image img {
 ul.mainstage-teasers-multiple {
   position: relative;
 }
-
-
-/* ul.mainstage-teasers-multiple li {
+ul.mainstage-teasers-multiple li {
   display: none;
 }
 ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
   display: block;
-} */
+}
+.bx-next {
+	right:-6px;
+	background: url(../images/carousel_next.png) no-repeat 0 -30px;
+}
+
+/*previous button*/
+.bx-prev {
+	left:-6px;
+	background: url(../images/carousel_prev.png) no-repeat 0 -30px;
+}
+
+.bx-next,
+.bx-prev {
+  top:43%;
+  /* for IE */
+  filter:alpha(opacity=80);
+  /* CSS3 standard */
+  opacity:0.8;
+}
+
 
 /* =Columns
 -------------------------------------------------------------- */
