@@ -303,4 +303,21 @@ function childtheme_belowheader() {
 }
 add_filter('thematic_belowheader','childtheme_belowheader');
 
+/**
+ * Remove crazy class names from body
+ */
+
+add_filter('thematic_show_bc_wordpress', FALSE);
+add_filter('thematic_show_bc_blogid', FALSE);
+add_filter('thematic_show_bc_datetime', FALSE);
+add_filter('thematic_show_bc_singular', FALSE);
+add_filter('thematic_show_bc_singlepost', FALSE);
+add_filter('thematic_show_bc_authorarchives', FALSE);
+add_filter('thematic_show_bc_categoryarchives', FALSE);
+add_filter('thematic_show_bc_tagarchives', FALSE);
+add_filter('thematic_show_bc_taxonomyarchives', FALSE);
+add_filter('thematic_show_bc_search', FALSE);
+add_filter('thematic_show_bc_loggedin', FALSE);
+add_filter('thematic_show_bc_pagex', FALSE);
+
 ?>
