@@ -370,3 +370,10 @@ body.home #access .current-menu-item {
   -moz-transform: rotate(-0.5deg);
   margin-left: 20px;
 }
+.entry-content img.beachgirl {
+  float: left;
+  margin-left: 10px;
+  margin-right: 35px;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+}
