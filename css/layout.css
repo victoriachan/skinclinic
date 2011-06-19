@@ -14,6 +14,8 @@
 
 #header {
   z-index: 10;
+}
+#additional-background.no-mainstage #header {
   background: url(../images/sky.jpg) 50% 0 repeat-x;
 }
 #branding {
