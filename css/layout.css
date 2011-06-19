@@ -330,12 +330,6 @@ body.home #access .current-menu-item {
   padding: 0;
 }
 
-/* Fix for ie7 etc where 5th item ran on two lines */
-/* HARDCODED: Will need updating when menu changed */
-#menu-our-treatments li#menu-item-138 {
-  clear: left;
-}
-
 /* Our treatment entry styles */
 .entry-content h3,
 .entry-content h2 {

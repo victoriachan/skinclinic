@@ -10,11 +10,21 @@ body.ie7 .entry-content p {
   width: auto;
 }
 
+body.ie7 .entry-content .column-odd {
+  margin-right: 5%;
+}
+
+/* Menu Fix for ie7 etc where 5th item ran on two lines */
+/* HARDCODED: Will need updating when menu changed */
+#menu-our-treatments li#menu-item-139 {
+  clear: left;
+}
+
 /* IE7 has no box shadow */
 body.ie6 ul.mainstage-teasers li,
 body.ie8 ul.mainstage-teasers li,
 body.ie7 ul.mainstage-teasers li {
-  border: 1px solid #DDD;
+  /* border: 1px solid #DDD; */
 }
 body.ie6 ul.mainstage-teasers li .inner-wrapper,
 body.ie8 ul.mainstage-teasers li .inner-wrapper,
