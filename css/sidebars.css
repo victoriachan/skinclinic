@@ -84,6 +84,10 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
 -------------------------------------------------------------- */
 
 .entry-content .column {
+  overflow: hidden;
+}
+
+.entry-content .column {
   float: left;
   width: 47%;
   margin-right: 6%;
