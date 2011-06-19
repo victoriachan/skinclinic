@@ -30,14 +30,15 @@
     //print "<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>";
     //print "<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>";
     thematic_create_stylesheet();
-
-	if (THEMATIC_COMPATIBLE_FEEDLINKS) {    
-    	// Creating the internal RSS links
-    	thematic_show_rss();
     
-    	// Creating the comments RSS links
-    	thematic_show_commentsrss();
-   	}
+    // Temporarily disable feeds
+	//if (THEMATIC_COMPATIBLE_FEEDLINKS) {    
+  //  	// Creating the internal RSS links
+  //  	thematic_show_rss();
+  //  
+  //  	// Creating the comments RSS links
+  //  	thematic_show_commentsrss();
+  // 	}
     
     // Creating the pingback adress
     thematic_show_pingback();
@@ -49,7 +50,7 @@
     wp_head();
     
 ?>
-<meta name="google-site-verification" content="ZxTb_pVCswq6wOT1I6iupvvNRYVZXV_KaTnpZ7jg1ig" />
+
 </head>
 
 <?php 
