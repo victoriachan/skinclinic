@@ -19,7 +19,7 @@ Thematic is © Ian Stewart http://themeshaper.com/
 @import url('../thematic/library/styles/typography.css');
 
 /* Apply a basic layout */
-@import url('../thematic/library/layouts/2c-r-fixed.css');
+@import url('css/2c-r-fixed.css');
 
 /* Apply basic image styles */
 @import url('../thematic/library/styles/images.css');

@@ -128,6 +128,17 @@ function skinclinic_additional_classes() {
  */
 function skinclinic_widgets_init() {
  register_sidebar( array(
+    'admin_menu_order' => 1300,
+    'name' => __( 'Site top', 'skinclinic' ),
+    'id' => 'site-top',
+    'description' => __( 'Site top of header', 'skinclinic' ),
+    'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    'function'    => 'skinclinic_site_top_widget',
+  ) );
+ register_sidebar( array(
     'admin_menu_order' => 1400,
     'name' => __( 'Below top menu', 'skinclinic' ),
     'id' => 'secondary-menu',
@@ -161,6 +172,10 @@ function skinclinic_secondary_menu_widget() {
     }
   }
 }
+function skinclinic_site_top_widget() {
+  dynamic_sidebar('site-top');
+}
+
 function skinclinic_page_footer_widget() {
   if (is_active_sidebar('page-footer')) {
     echo thematic_before_widget_area('page-footer');

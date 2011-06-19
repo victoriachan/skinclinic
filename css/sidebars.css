@@ -87,7 +87,13 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
   float: left;
   width: 47%;
   margin-right: 6%;
-  font-size: 0.9em;
+}
+.entry-content .column p {
+  font-size: 0.95em; 
+}
+.entry-content .column .image {
+  float: left;
+  display: inline;
 }
 .entry-content .column-odd {
   clear: both;

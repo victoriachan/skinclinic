@@ -69,9 +69,8 @@ if (apply_filters('thematic_open_wrapper', true)) {
     ?>   
 
     <div id="header">
-    
         <?php 
-        
+        get_sidebar('site-top');
         // action hook creating the theme header
         thematic_header();
         

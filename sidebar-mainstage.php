@@ -19,7 +19,7 @@
     <?php foreach ($advertisements as $key => $value): ?>
       <li class="mainstage-teaser-<?php print $key ?>"><div class="inner-wrapper">
       <?php if ($value[1] || $value[2]): ?>
-        <div class="text-content">
+        <div class="text-content" <?php if ($value[4]) { print ' style ="' . $value[4] . '"'; } ?>>
         <?php if ($value[1]): ?><h2><?php print $value[1]; ?></h2><?php endif; ?>
         <?php if ($value[2]): ?><div class="desc"><?php print $value[2]; ?></div><?php endif; ?>
         </div>

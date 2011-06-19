@@ -18,6 +18,7 @@
 		<?php foreach ($columns as $key => $value): ?>
 			<div class="column <?php print $key % 2 ? 'column-even' : 'column-odd'; ?>">
 			<?php if ($value[1]): ?><h3><?php print $value[1]; ?></h3><?php endif; ?>
+			<?php if ($value[3]): ?><div class="image"><?php print wp_get_attachment_image( $value[3], 'full', FALSE ); ?></div><?php endif; ?>
 			<?php if ($value[2]): ?><div class="desc"><?php print $value[2]; ?></div><?php endif; ?>
 			</div>
 		<?php endforeach; ?>
