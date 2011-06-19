@@ -51,6 +51,11 @@ h3, h4, h5, h6 {
   line-height: 1.3em;
   margin: 0 0 12px;
 }
+h2 a,
+h3 a {
+  color: #222;
+  text-decoration: none;
+}
 .entry-content .post-intro {
   font-size: 1.3em;
   line-height: 1.5em;
@@ -92,13 +97,18 @@ hr {
     height:1px;
     margin-bottom:22px;
 }
-a:visited,
-a:link {
+/* a:visited,
+a:link */ 
+a {
     color:#30C1C1;
 }
 a:active,
 a:hover {
     color: #666;
+}
+a.more {
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 /* =Content
