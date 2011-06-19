@@ -49,7 +49,7 @@
     wp_head();
     
 ?>
-
+<meta name="google-site-verification" content="ZxTb_pVCswq6wOT1I6iupvvNRYVZXV_KaTnpZ7jg1ig" />
 </head>
 
 <?php 
