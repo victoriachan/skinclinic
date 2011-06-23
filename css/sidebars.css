@@ -150,6 +150,43 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
 	color: #0066cc;
 }
 
+/* =Social bar - page bottom
+-------------------------------------------------------------- */
+#content #page-bottom {
+  border: 0;
+  border-top: 1px dotted #ccc;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#content #page-bottom ul {
+  padding: 0;
+  margin: 0;
+}
+#content #page-bottom h3 {
+  font-size: 12px;
+  padding: 0;
+  display: none;
+}
+#page-bottom .textwidget {
+  overflow: hidden;
+}
+#twitter-wrapper,
+#plusone-wrapper,
+#fb-wrapper {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+#twitter-wrapper {
+  width: 65px; 
+}
+#plusone-wrapper {
+  width: 70px;
+}
+#fb-wrapper {
+  width: 350px;
+}
+
 /* =Page footer
 -------------------------------------------------------------- */
 #page-footer-wrapper {
@@ -206,3 +243,4 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
   border: 1px solid #ccc;
   width: 385px;
 }
+
