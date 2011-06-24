@@ -786,3 +786,6 @@ li.content-column {
     margin:2px;
     padding:2px 4px;
 }
+.entry-content span.edit-link {
+  display: none;
+}

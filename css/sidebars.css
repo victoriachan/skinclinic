@@ -153,12 +153,13 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
 /* =Social bar - page bottom
 -------------------------------------------------------------- */
 #pre-page-footer {
-  margin: 0 auto;
-  width: 940px;
+  padding: 10px 0 0 0;
+  border-top: 1px dotted #ccc;
 }
 #pre-page-footer ul {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 940px;
   position: relative;
 }
 #pre-page-footer ul li {
@@ -180,7 +181,7 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
 }
 #twitter-wrapper {
   width: 65px;
-  padding: 0 0 20px 0;
+  padding: 0 0 7px 0;
 }
 #plusone-wrapper {
   width: 70px;
