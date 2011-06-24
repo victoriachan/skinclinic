@@ -2,8 +2,8 @@
 
     // Creating the doctype
     thematic_create_doctype();
-    echo " ";
-    language_attributes();
+    //echo " ";
+    //language_attributes();
     echo ">\n";
     
     // Creating the head profile
@@ -30,6 +30,17 @@
     //print "<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>";
     //print "<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>";
     thematic_create_stylesheet();
+    
+    // Facebook Open Graph Tags
+    ?>
+    <meta property="og:title" content="Surrey Skin &amp; Laser Clinic" />
+    <meta property="og:type" content="company" />
+    <meta property="og:url" content="http://www.surreyskinandlaserclinic.com/" />
+    <meta property="og:image" content="http://www.surreyskinandlaserclinic.com/wp-content/themes/skinclinic/images/logo_color.png" />
+    <meta property="og:site_name" content="Surrey Skin &amp; Laser Clinic" />
+    <meta property="fb:admins" content="512283960" />
+  <?php
+    
     
     // Temporarily disable feeds
 	//if (THEMATIC_COMPATIBLE_FEEDLINKS) {    

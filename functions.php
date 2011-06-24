@@ -110,6 +110,16 @@ function skinclinic_additional_classes() {
   }
 }
 
+function skinclinic_doctype($content) {
+    //$content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">' . "\n";
+    $content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">' . "\n";
+    $content .= '<html xmlns="http://www.w3.org/1999/xhtml"';
+    $content .= ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" ';
+    //xmlns:og="http://ogp.me/ns#"
+    return $content;
+}
+add_filter('thematic_create_doctype', 'skinclinic_doctype');
+
 
 /**
  * ********************************************
@@ -151,6 +161,17 @@ function skinclinic_widgets_init() {
   ) );
   register_sidebar( array(
     'admin_menu_order' => 1500,
+    'name' => __( 'Pre page footer', 'skinclinic' ),
+    'id' => 'pre-page-footer',
+    'description' => __( 'SkinClinic pre page footer widget area', 'skinclinic' ),
+    'before_widget' => thematic_before_widget(),
+    'after_widget' => thematic_after_widget(),
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    'function'    => 'skinclinic_pre_page_footer_widget',
+  ) );
+  register_sidebar( array(
+    'admin_menu_order' => 1500,
     'name' => __( 'Page footer', 'skinclinic' ),
     'id' => 'page-footer',
     'description' => __( 'SkinClinic page footer widget area', 'skinclinic' ),
@@ -174,6 +195,18 @@ function skinclinic_secondary_menu_widget() {
 }
 function skinclinic_site_top_widget() {
   dynamic_sidebar('site-top');
+}
+
+function skinclinic_pre_page_footer_widget() {
+  if (is_active_sidebar('pre-page-footer')) {
+    ?>
+    <div id="pre-page-footer" class="widget-area">
+			<ul class="xoxo">
+				<?php dynamic_sidebar( 'pre-page-footer' ); ?>
+			</ul>
+		</div><!-- #pre-page-footer .widget-area -->
+    <?php
+  }
 }
 
 function skinclinic_page_footer_widget() {
@@ -291,6 +324,7 @@ function childtheme_override_access() { ?>
  * Show our footer widget
  */
 function childtheme_abovefooter() {
+  print skinclinic_pre_page_footer_widget();
   print get_sidebar('page-footer');
 }
 add_filter('thematic_abovefooter','childtheme_abovefooter');

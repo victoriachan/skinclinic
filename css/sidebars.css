@@ -152,39 +152,44 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
 
 /* =Social bar - page bottom
 -------------------------------------------------------------- */
-#content #page-bottom {
-  border: 0;
-  border-top: 1px dotted #ccc;
-  margin-bottom: 0;
-  padding-bottom: 0;
+#pre-page-footer {
+  margin: 0 auto;
+  width: 940px;
 }
-#content #page-bottom ul {
+#pre-page-footer ul {
   padding: 0;
   margin: 0;
+  position: relative;
 }
-#content #page-bottom h3 {
-  font-size: 12px;
+#pre-page-footer ul li {
+  list-style: none;
+}
+#pre-page-footer h3 {
+  font-size: 1.1em;
   padding: 0;
   display: none;
 }
-#page-bottom .textwidget {
-  overflow: hidden;
+#pre-page-footer .textwidget {
+  /* overflow: hidden; */
 }
 #twitter-wrapper,
 #plusone-wrapper,
 #fb-wrapper {
   float: left;
   overflow: hidden;
-  position: relative;
 }
 #twitter-wrapper {
-  width: 65px; 
+  width: 65px;
+  padding: 0 0 20px 0;
 }
 #plusone-wrapper {
   width: 70px;
 }
 #fb-wrapper {
   width: 350px;
+  left: 135px;
+  position: absolute;
+  overflow: visible;
 }
 
 /* =Page footer
