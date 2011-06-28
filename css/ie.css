@@ -37,3 +37,8 @@ body.ie8 .entry-content img.framed-image,
 body.ie7 .entry-content img.framed-image {
   border: 6px solid #EEE;
 }
+
+/* IE7 cannot display plus one */
+body.ie7 #plusone-wrapper {
+  display: none;
+}
