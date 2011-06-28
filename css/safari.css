@@ -1,17 +1,12 @@
 /* IE7 has no box shadow */
-body.safari ul.mainstage-teasers li,
-body.safari ul.mainstage-teasers li,
-body.safari ul.mainstage-teasers li {
-  /* border: 1px solid #DDD; */
-}
-body.safari ul.mainstage-teasers li .inner-wrapper,
-body.safari ul.mainstage-teasers li .inner-wrapper,
-body.safari ul.mainstage-teasers li .inner-wrapper {
-  overflow: hidden;
-  border: 10px solid #FFF;
-}
 body.safari .entry-content img.framed-image,
 body.safari .entry-content img.framed-image,
 body.safari .entry-content img.framed-image {
   border: 6px solid #EEE;
+}
+body.safari ul.mainstage-teasers li .inner-wrapper {
+  border: 9px solid #fff;
+}
+body.safari ul.mainstage-teasers li .outer-wrapper {
+  border: 1px solid #ccc;
 }
