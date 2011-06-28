@@ -42,3 +42,6 @@ body.ie7 .entry-content img.framed-image {
 body.ie7 #plusone-wrapper {
   display: none;
 }
+body.ie7 #fb-wrapper {
+  left: 65px;
+}
