@@ -35,10 +35,10 @@
     ?>
     <meta property="og:title" content="Surrey Skin &amp; Laser Clinic" />
     <meta property="og:type" content="company" />
-    <meta property="og:url" content="http://www.surreyskinandlaserclinic.com/" />
+    <meta property="og:url" content="http://www.surreyskinandlaserclinic.com" />
     <meta property="og:image" content="http://www.surreyskinandlaserclinic.com/wp-content/themes/skinclinic/images/logo_color.png" />
     <meta property="og:site_name" content="Surrey Skin &amp; Laser Clinic" />
-    <meta property="fb:admins" content="512283960" />
+    <meta property="fb:app_id" content="167220370010673" />    
   <?php
     
     
