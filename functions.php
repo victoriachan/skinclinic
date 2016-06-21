@@ -284,7 +284,7 @@ function childtheme_override_blogtitle() {
     <<?php print $thistag ?> id="site-title"><span><a href="<?php bloginfo('url') ?>/" title="<?php bloginfo('name') ?>" rel="home"><?php bloginfo('name') ?></a></span></<?php print $thistag ?>>
   <?php
 }
-add_action('thematic_header','childtheme_override_blogtitle',3);
+//add_action('thematic_header','childtheme_override_blogtitle',3);
 
 function childtheme_override_postheader() {
   global $post; 
