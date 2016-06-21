@@ -201,9 +201,9 @@ function skinclinic_pre_page_footer_widget() {
   if (is_active_sidebar('pre-page-footer')) {
     ?>
     <div id="pre-page-footer" class="widget-area">
-			<div class="xoxo">
+			<ul class="xoxo">
 				<?php dynamic_sidebar( 'pre-page-footer' ); ?>
-			</div>
+			</ul>
 		</div><!-- #pre-page-footer .widget-area -->
     <?php
   }

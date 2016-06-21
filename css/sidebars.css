@@ -221,22 +221,22 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
   margin-top: 20px;
   font-weight: normal;
 }
-#page-footer div.xoxo {
+#page-footer ul.xoxo {
   margin: 0 auto;
   padding: 0;
   width: 960px;
 }
-#page-footer div.xoxo .widget-item {
+#page-footer ul.xoxo > li {
   list-style: none;
   margin: 0 0 0 5% ;
   padding: 0;  
   width: 23%;
   float: left;
 }
-#page-footer div.xoxo .widget-item#text-2 {
+#page-footer ul.xoxo > li#text-2 {
   width: 28%;
 }
-#page-footer div.xoxo .widget-item#text-4 {
+#page-footer ul.xoxo > li#text-4 {
   width: 26%;
   margin: 0;
   float: right;
