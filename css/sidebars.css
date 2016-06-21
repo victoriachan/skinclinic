@@ -226,17 +226,17 @@ ul.mainstage-teasers-multiple li.mainstage-teaser-0 {
   padding: 0;
   width: 960px;
 }
-#page-footer ul.xoxo li {
+#page-footer ul.xoxo > li {
   list-style: none;
   margin: 0 0 0 5% ;
   padding: 0;  
   width: 23%;
   float: left;
 }
-#page-footer ul.xoxo li#text-2 {
+#page-footer ul.xoxo > li#text-2 {
   width: 28%;
 }
-#page-footer ul.xoxo li#text-4 {
+#page-footer ul.xoxo > li#text-4 {
   width: 26%;
   margin: 0;
   float: right;
